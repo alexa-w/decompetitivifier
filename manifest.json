@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "decompetitivify",
+  "version": "1.0",
+
+  "description": "Removes the \"Social News\", \"Yesterday's News\", and \"Leaderboard\" sections entirely from the Puzzmo dashboard",
+
+  "icons": {
+    "48": "icons/cwd.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.puzzmo.com/*"],
+      "js": ["decompetitivify.js"]
+    }
+  ]
+}
